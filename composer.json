@@ -1,0 +1,46 @@
+{
+    "name": "wernerdweight/enhanced-exception",
+    "type": "library",
+    "description": "Generic enhanced exception to be used in other projects",
+    "keywords": [
+        "exception",
+        "enhanced",
+        "generic"
+    ],
+    "homepage": "https://github.com/wernerdweight/EnhancedException",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Werner Dweight Solutions",
+            "email": "info@wds.blue"
+        }
+    ],
+    "require": {
+        "php": ">=7.2.0",
+        "thecodingmachine/safe": "^0.1.13"
+    },
+    "require-dev": {
+        "wernerdweight/cs": "^1.2.1",
+        "thecodingmachine/phpstan-safe-rule": "^0.1.3"
+    },
+    "suggest": {},
+    "autoload": {
+        "psr-4": {
+            "WernerDweight\\EnhancedException\\": "src"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "WernerDweight\\EnhancedException\\Tests\\": "Tests"
+        }
+    },
+    "scripts": {
+        "fix": "ecs check ./src/ ./tests/ --config ecs.yaml --fix",
+        "phpstan": "phpstan analyse ./src/ ./tests/ --level max",
+        "phpmd": "phpmd ./src/ text vendor/wernerdweight/cs/WernerDweight/CS/phpmd.xml",
+        "ecs": "ecs check ./src/ ./tests/ --config ecs.yaml",
+        "ecs-fix": "ecs check ./src/ ./tests/ --config ecs.yaml --fix",
+        "phpunit": "phpunit",
+        "victor": "victor"
+    }
+}
