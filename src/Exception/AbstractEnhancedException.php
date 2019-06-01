@@ -1,9 +1,9 @@
 <?php
 declare(strict_types=1);
 
-namespace WernerDweight\WdCms\Core\BaseBundle\Exception;
+namespace WernerDweight\EnhancedException\Exception;
 
-abstract class EnhancedException extends \RuntimeException implements EnhancedExceptionInterface
+abstract class AbstractEnhancedException extends \RuntimeException implements EnhancedExceptionInterface
 {
     /** @var int */
     private const EXCEPTION_UNKNOWN = 1;

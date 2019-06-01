@@ -1,7 +1,7 @@
 <?php
 declare(strict_types=1);
 
-namespace WernerDweight\WdCms\Core\BaseBundle\Exception;
+namespace WernerDweight\EnhancedException\Exception;
 
 interface EnhancedExceptionInterface extends \Throwable
 {

@@ -20,9 +20,9 @@ composer require wernerdweight/enhanced-exception
 2) Define your exceptions
 
 ```php
-use WernerDweight\EnhancedException\Exception\EnhancedException;
+use WernerDweight\EnhancedException\Exception\AbstractEnhancedException;
 
-class MyException extends EnhancedException
+class MyException extends AbstractEnhancedException
 {
     /** @var int */
     public const EXCEPTION_SOMETHING_BAG_HAPPENED = 1;
