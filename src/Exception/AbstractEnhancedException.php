@@ -15,8 +15,10 @@ abstract class AbstractEnhancedException extends \RuntimeException implements En
 
     /**
      * @param int             $code
-     * @param array           $payload
+     * @param mixed[]         $payload
      * @param \Throwable|null $previous
+     *
+     * @throws \Safe\Exceptions\StringsException
      */
     public function __construct(int $code, array $payload = [], ?\Throwable $previous = null)
     {
@@ -27,7 +29,7 @@ abstract class AbstractEnhancedException extends \RuntimeException implements En
         $message = static::$messages[$code];
 
         if (true !== empty($payload)) {
-            $message = sprintf($message, ...$payload);
+            $message = \Safe\sprintf($message, ...$payload);
         }
 
         parent::__construct($message, $code, $previous);
