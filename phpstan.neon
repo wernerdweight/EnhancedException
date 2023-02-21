@@ -1,2 +1,11 @@
 includes:
     - vendor/thecodingmachine/phpstan-safe-rule/phpstan-safe-rule.neon
+    - vendor/wernerdweight/cs/src/Rules/phpstan-rules.neon
+
+parameters:
+    ignoreErrors:
+        - '#Instead of abstract class, use specific service with composition#'
+        - '#Instead of protected element in use private element or contract method#'
+        - '#Do not use static property#'
+        - '#Spread operator is not allowed.#'
+        - '#Interface must be located in "Contract" or "Contracts" namespace#'

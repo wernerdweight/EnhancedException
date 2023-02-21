@@ -3,7 +3,7 @@ EnhancedException
 
 Generic enhanced exception to be used in other projects
 
-[![Build Status](https://travis-ci.org/wernerdweight/EnhancedException.svg?branch=master)](https://travis-ci.org/wernerdweight/EnhancedException)
+[![Build Status](https://app.travis-ci.com/wernerdweight/EnhancedException.svg?branch=master)](https://app.travis-ci.com/wernerdweight/EnhancedException)
 [![Latest Stable Version](https://poser.pugx.org/wernerdweight/enhanced-exception/v/stable)](https://packagist.org/packages/wernerdweight/enhanced-exception)
 [![Total Downloads](https://poser.pugx.org/wernerdweight/enhanced-exception/downloads)](https://packagist.org/packages/wernerdweight/enhanced-exception)
 [![License](https://poser.pugx.org/wernerdweight/enhanced-exception/license)](https://packagist.org/packages/wernerdweight/enhanced-exception)

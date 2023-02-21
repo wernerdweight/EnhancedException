@@ -5,18 +5,20 @@ namespace WernerDweight\EnhancedException\Exception;
 
 abstract class AbstractEnhancedException extends \RuntimeException implements EnhancedExceptionInterface
 {
-    /** @var int */
+    /**
+     * @var int
+     */
     private const EXCEPTION_UNKNOWN = 1;
 
-    /** @var string[] */
+    /**
+     * @var string[]
+     */
     protected static $messages = [
         self::EXCEPTION_UNKNOWN => 'An unknown exception has occured!',
     ];
 
     /**
-     * @param int             $code
-     * @param mixed[]         $payload
-     * @param \Throwable|null $previous
+     * @param mixed[] $payload
      *
      * @throws \Safe\Exceptions\StringsException
      */
@@ -28,7 +30,7 @@ abstract class AbstractEnhancedException extends \RuntimeException implements En
 
         $message = static::$messages[$code];
 
-        if (true !== empty($payload)) {
+        if (count($payload) > 0) {
             $message = \Safe\sprintf($message, ...$payload);
         }
 
